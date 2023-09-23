@@ -13,7 +13,6 @@ async function handleRegister() {
   if (!error.value){
     navigateTo("/")
   }
-
 }
 </script>
 

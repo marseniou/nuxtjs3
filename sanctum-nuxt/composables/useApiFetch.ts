@@ -3,8 +3,6 @@
 } */
 import type { UseFetchOptions } from "nuxt/app"
 
-  
-
 export function useApiFetch<T>(path: string, options: UseFetchOptions<T> = {}) {
   const config = useRuntimeConfig()
   let headers: any = {
@@ -33,7 +31,5 @@ export function useApiFetch<T>(path: string, options: UseFetchOptions<T> = {}) {
         ...options?.headers
       }
     }
-
   );
-
 }
